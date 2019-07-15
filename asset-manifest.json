@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/colorpicker/static/css/main.34de6062.chunk.css",
-    "main.js": "/colorpicker/static/js/main.4286f7cf.chunk.js",
-    "main.js.map": "/colorpicker/static/js/main.4286f7cf.chunk.js.map",
+    "main.css": "/colorpicker/static/css/main.55656f2a.chunk.css",
+    "main.js": "/colorpicker/static/js/main.d76eb920.chunk.js",
+    "main.js.map": "/colorpicker/static/js/main.d76eb920.chunk.js.map",
     "runtime~main.js": "/colorpicker/static/js/runtime~main.c09bf667.js",
     "runtime~main.js.map": "/colorpicker/static/js/runtime~main.c09bf667.js.map",
     "static/css/2.e337d257.chunk.css": "/colorpicker/static/css/2.e337d257.chunk.css",
-    "static/js/2.805fd14e.chunk.js": "/colorpicker/static/js/2.805fd14e.chunk.js",
-    "static/js/2.805fd14e.chunk.js.map": "/colorpicker/static/js/2.805fd14e.chunk.js.map",
+    "static/js/2.98e162e1.chunk.js": "/colorpicker/static/js/2.98e162e1.chunk.js",
+    "static/js/2.98e162e1.chunk.js.map": "/colorpicker/static/js/2.98e162e1.chunk.js.map",
     "index.html": "/colorpicker/index.html",
-    "precache-manifest.9f6485843d49db261b28fe7ff4919548.js": "/colorpicker/precache-manifest.9f6485843d49db261b28fe7ff4919548.js",
+    "precache-manifest.5d0924fb2d92df92549665da5c5c6669.js": "/colorpicker/precache-manifest.5d0924fb2d92df92549665da5c5c6669.js",
     "service-worker.js": "/colorpicker/service-worker.js",
     "static/css/2.e337d257.chunk.css.map": "/colorpicker/static/css/2.e337d257.chunk.css.map",
-    "static/css/main.34de6062.chunk.css.map": "/colorpicker/static/css/main.34de6062.chunk.css.map"
+    "static/css/main.55656f2a.chunk.css.map": "/colorpicker/static/css/main.55656f2a.chunk.css.map",
+    "static/media/bg.svg": "/colorpicker/static/media/bg.ffffa9d2.svg"
   }
 }
