@@ -12,17 +12,17 @@ export default {
         '&:hover button': {
             opacity: '1'
         },
-        [sizes.down('xs')]: {
-            width: "100%",
-            height: props => (props.showingFullPalette ? '5%' : '10%'),
+        [sizes.down("xs")]: {
+            width: "100% !important",
+            height: props => (props.showingFullPalette ? '5% !important' : '10% !important'),
         },
-        [sizes.down('md')]: {
+        [sizes.down('sm')]: {
             width: "50%",
-            height: props => (props.showingFullPalette ? '10%' : '20%'),
+            height: props => (props.showingFullPalette ? '10% ' : '20% '),
         },
         [sizes.down('lg')]: {
-            width: "25%",
-            height: props => (props.showingFullPalette ? '20%' : '33.33%'),
+            width: "25% ",
+            height: props => (props.showingFullPalette ? '20% ' : '33.33% '),
         }
     },
     copyText: {
