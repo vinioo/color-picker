@@ -56,7 +56,7 @@ export default class PaletteMetaForm extends Component {
     };
     render() {
         const { newPaletteName } = this.state;
-        const { hideForm, handleSubmit } = this.props;
+        const { hideForm } = this.props;
         return (
             <div>
                 <Dialog open={this.state.stage === 'emoji'} onClose={hideForm}>

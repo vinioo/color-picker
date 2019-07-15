@@ -1,6 +1,5 @@
 import sizes from './sizes';
 import bg from './bg.svg';
-import { purple } from '@material-ui/core/colors';
 export default {
     "@global": {
         ".fade-exit": {
@@ -43,7 +42,6 @@ export default {
         justifyContent: 'space-between',
         color: 'white',
         alignItems: 'center',
-        color: 'white',
         '& a': {
             color: 'white'
         }
