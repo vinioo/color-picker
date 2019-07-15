@@ -9,7 +9,6 @@ import Page from './Page';
 import seedColors from './seedColors';
 import { generatePalette } from './colorHelpers';
 
-
 class App extends Component {
     state = {
         palettes:
@@ -113,6 +112,19 @@ class App extends Component {
                                                             .paletteId
                                                     )
                                                 )}
+                                            />
+                                        </Page>
+                                    )}
+                                />
+                                <Route
+                                    render={routeProps => (
+                                        <Page>
+                                            <PaletteList
+                                                palettes={this.state.palettes}
+                                                deletePalette={
+                                                    this.deletePalette
+                                                }
+                                                {...routeProps}
                                             />
                                         </Page>
                                     )}
