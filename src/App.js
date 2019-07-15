@@ -8,19 +8,38 @@ import seedColors from './seedColors';
 import { generatePalette } from './colorHelpers';
 
 class App extends Component {
-    state = { palettes: seedColors };
-
-    findPalette(id) {
+    state = {
+        palettes:
+            JSON.parse(window.localStorage.getItem('palettes')) || seedColors
+    };
+    findPalette = (id) => {
         return this.state.palettes.find(function(palette) {
             return palette.id === id;
         });
     }
 
+    deletePalette = (id) => {
+        this.setState(st => ({
+                palettes: st.palettes.filter(palette => palette.id !== id)
+            }),
+            this.syncLocalStorage
+        );
+    }
+
     savePalette = newPalette => {
-        console.log(newPalette)
-        this.setState({palettes: [...this.state.palettes, newPalette]})
-        
+        this.setState(
+            { palettes: [...this.state.palettes, newPalette] },
+            this.syncLocalStorage
+        );
     };
+
+    syncLocalStorage() {
+        console.log('oi');
+        window.localStorage.setItem(
+            'palettes',
+            JSON.stringify(this.state.palettes)
+        );
+    }
     render() {
         return (
             <Switch>
@@ -30,7 +49,8 @@ class App extends Component {
                     render={routeProps => (
                         <NewPaletteForm
                             savePalette={this.savePalette}
-                            {...routeProps} palettes={this.state.palettes}
+                            {...routeProps}
+                            palettes={this.state.palettes}
                         />
                     )}
                 />
@@ -38,7 +58,11 @@ class App extends Component {
                     exact
                     path="/"
                     render={routeProps => (
-                        <PaletteList palettes={this.state.palettes} {...routeProps} />
+                        <PaletteList
+                            palettes={this.state.palettes}
+                            deletePalette={this.deletePalette}
+                            {...routeProps}
+                        />
                     )}
                 />
                 <Route
