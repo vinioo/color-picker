@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
+import { arrayMove } from 'react-sortable-hoc';
+import classNames from 'classnames';
 import PaletteFormNav from './PaletteFormNav';
 import ColorPickerForm from './ColorPickerForm';
 import Drawer from '@material-ui/core/Drawer';
@@ -10,7 +11,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import DraggableColorList from './DraggableColorList';
-import { arrayMove } from 'react-sortable-hoc';
 import styles from './styles/NewPaletteFormStyles';
 
 class NewPaletteForm extends Component {
