@@ -11,8 +11,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import DraggableColorList from './DraggableColorList';
-import styles from './styles/NewPaletteFormStyles';
-import seedColors from './seedColors';
+import styles from '../styles/NewPaletteFormStyles';
+import seedColors from '../seedColors';
 
 class NewPaletteForm extends Component {
     static defaultProps = {
